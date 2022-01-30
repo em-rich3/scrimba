@@ -1,8 +1,13 @@
 function Header() {
     return (
-        <header>
-            <nav>
-                <img src="./react-logo.png" width="50px"></img>
+        <header className="header">
+            <nav className="nav">
+                <img className="nav-logo" src="./react-logo.png"></img>
+                <ul className="nav-items">
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
             </nav>
         </header>
 
@@ -26,7 +31,7 @@ function MainContent() {
 
 function Footer() {
     return (
-        <footer>
+        <footer className="footer">
             <small>© 2022 Richardson development. All rights reserved.</small>
         </footer>
     )
