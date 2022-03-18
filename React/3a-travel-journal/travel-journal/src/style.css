@@ -25,3 +25,37 @@ body {
   font-size: 20px;
   padding: 10px 10px;
 }
+
+.card {
+  padding: 30px 40px;
+  display: flex;
+  align-items: center;
+
+}
+
+.card--image {
+  height: 250px;
+  display: flex;
+  
+}
+
+.card--info {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card--location {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.card--locationPin {
+  padding-right: 10px;
+}
+
+.card--country {
+  text-transform: uppercase;
+  padding-right: 10px;
+}
