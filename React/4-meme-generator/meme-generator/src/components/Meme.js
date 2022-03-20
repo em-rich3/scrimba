@@ -3,15 +3,21 @@ import memesData from "../memesData"
 
 export default function Meme() {
 
+    const [memeImageURL, setMemeImageURL] = React.useState("")
+
     function getMemeImage() {
         const memesArray = memesData.data.memes
         const randomNumber = Math.floor(Math.random() * memesArray.length)
-        const url = memesArray[randomNumber].url;
-        console.log(url);
+        const memeImageURL = memesArray[randomNumber].url;
+        setMemeImageURL(memeImageURL);
     }
 
     return (
         <main>
+            <img
+                src = {memeImageURL}
+                alt = "meme"
+            />
             <div className="form">
                 <input 
                     type="text"
