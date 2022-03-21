@@ -3,7 +3,7 @@ import memesData from "../memesData"
 
 export default function Meme() {
 
-    const [memeImageURL, setMemeImageURL] = React.useState("")
+    const [memeImageURL, setMemeImageURL] = React.useState("http://i.imgflip.com/1bij.jpg")
 
     function getMemeImage() {
         const memesArray = memesData.data.memes
@@ -14,10 +14,6 @@ export default function Meme() {
 
     return (
         <main>
-            <img
-                src = {memeImageURL}
-                alt = "meme"
-            />
             <div className="form">
                 <input 
                     type="text"
@@ -36,6 +32,11 @@ export default function Meme() {
                     Get a new meme image 🖼
                 </button>
             </div>
+            <img
+                className="meme--image"
+                src = {memeImageURL}
+                alt = "meme"
+            />
         </main>
     )
     
